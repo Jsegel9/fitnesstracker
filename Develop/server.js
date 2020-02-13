@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 // app.use(require("./public/api"));
 
 app.get("/exercise", function(req, res){
-    res.sendFile(path.join(__dirname, "./public/exercise.html"))
+    res.sendFile(path.join(__dirname, "../public/exercise.html"))
 });
 
 app.listen(PORT, () => {
